@@ -7,10 +7,14 @@
     "serve": "vite preview"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "prettier": "^2.8.2",
     "prettier-plugin-tailwindcss": "^0.2.1",
     "vitawind": "^2.2.4",
-    "vite": "^4.0.4",
-    "cross-env": "^7.0.3"
+    "vite": "^4.0.4"
+  },
+  "dependencies": {
+    "gsap": "^3.11.4",
+    "three": "^0.148.0"
   }
 }
