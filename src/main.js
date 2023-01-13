@@ -1,3 +1,4 @@
+import gsap from 'gsap'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import './index.css'
@@ -42,3 +43,23 @@ const animate = () => {
   renderer.render(scene, camera)
 }
 animate()
+
+let mouseEffect = false
+window.addEventListener('mousedown', () => (mouseEffect = true))
+window.addEventListener('mouseup', () => (mouseEffect = false))
+window.addEventListener('mousemove', e => {
+  const randomColor = () => {
+    const rgb = [
+      Math.round((e.pageX / sizes.width) * 255),
+      Math.round((e.pageY / sizes.height) * 255),
+      155
+    ]
+    const color = new THREE.Color(`rgb(${rgb.join(',')})`)
+    gsap.to(sphere.material.color, {
+      r: color.r,
+      g: color.g,
+      b: color.b
+    })
+  }
+  mouseEffect && randomColor()
+})
