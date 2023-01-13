@@ -74,3 +74,9 @@ window.addEventListener('resize', () => {
 
 const tl = gsap.timeline({ defaults: { duration: 2 } })
 tl.fromTo(sphere.scale, { x: 0, y: 0 }, { x: 1, y: 1, delay: 1 })
+tl.fromTo(
+  'nav',
+  { y: '-100%', opacity: 0 },
+  { y: '0', opacity: 1, ease: 'back' },
+  '-=2'
+)
