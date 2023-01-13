@@ -71,3 +71,6 @@ window.addEventListener('resize', () => {
   camera.updateProjectionMatrix()
   renderer.setSize(sizes.width, sizes.height)
 })
+
+const tl = gsap.timeline({ defaults: { duration: 2 } })
+tl.fromTo(sphere.scale, { x: 0, y: 0 }, { x: 1, y: 1, delay: 1 })
