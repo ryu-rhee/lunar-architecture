@@ -77,6 +77,8 @@ tl.fromTo(sphere.scale, { x: 0, y: 0 }, { x: 1, y: 1, delay: 1 })
 tl.fromTo(
   'nav',
   { y: '-100%', opacity: 0 },
-  { y: '0', opacity: 1, ease: 'back' },
+  { y: 0, opacity: 1, ease: 'back' },
   '-=2'
 )
+tl.fromTo('#hero-title', { y: '100%', opacity: 0 }, { y: 0, opacity: 1 })
+tl.fromTo('#hero-subtitle', { y: '100%', opacity: 0 }, { y: 0, opacity: 1 })
