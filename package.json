@@ -1,20 +1,21 @@
 {
   "name": "lunar-architecture",
   "version": "1.0.0",
+  "license": "MIT",
   "scripts": {
     "dev": "cross-env TAILWIND_MODE=watch vite",
     "build": "cross-env TAILWIND_MODE=build vite build",
     "serve": "vite preview"
   },
-  "devDependencies": {
-    "cross-env": "^7.0.3",
-    "prettier": "^2.8.2",
-    "prettier-plugin-tailwindcss": "^0.2.1",
-    "vitawind": "^2.2.4",
-    "vite": "^4.0.4"
-  },
   "dependencies": {
     "gsap": "^3.11.4",
     "three": "^0.148.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "prettier": "^2.8.3",
+    "prettier-plugin-tailwindcss": "^0.2.1",
+    "vitawind": "^2.2.4",
+    "vite": "^4.0.4"
   }
 }
