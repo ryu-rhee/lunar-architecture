@@ -1,1 +1,1 @@
-# :dizzy: Homepage for LunArc.
+# :sparkles: Homepage for LunArc.
